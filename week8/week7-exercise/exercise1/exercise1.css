@@ -1,0 +1,124 @@
+#container {
+    background-color: #F1F1F1;
+    max-width: 1280px;
+    margin: auto;
+}
+
+#header {
+    background-color: #F1F1F1;
+    text-align: center;
+
+}
+
+#header p {
+    font-size: 25px;
+    ;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 75px;
+}
+
+
+.topnav {
+    display: flex;
+    background-color: #333;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.topnav div a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    padding: 14px 16px;
+}
+
+.topcontent {
+    display: flex;
+}
+
+.column {
+    padding: 35px;
+}
+
+.container1 {
+    position: relative;
+}
+
+.bottomright {
+    position: relative;
+    bottom: 8px;
+    font-size: 18px;
+    position: relative;
+    bottom: 10px;
+    border: 1px solid #73AD21;
+
+}
+
+.container {
+    position: relative;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 100px;
+    right: 16px;
+    font-size: 18px;
+}
+
+.container {
+    position: relative;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 100px;
+    left: 16px;
+    font-size: 18px;
+    border: 1px solid #73AD21;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+
+
+
+.center {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 45px;
+}
+
+.center1 {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
