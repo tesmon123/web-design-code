@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website footen</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/nft .png" class="logo">
+                <ul id="sidemenu">
+
+                    <li><a href="#header">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+
+
+                    <i class="" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class=" header-text">
+                <p>Bachelor's Degree </p>
+                <h1>Cyber Security<span> Tesmon Nai </span><br> From NewEra</h1>
+            </div>
+        </div>
+    </div>
+    <!------------about---------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Over the years, I have gained extensive experience in areas
+                        such as cyber security.From managing network infrastructures
+                        and troubleshooting software issues to implementing robust cybersecurity
+                        measures, I have enjoyed working on diverse IT projects that require both
+                        technical expertise and innovative thinking.
+
+                        In addition to my technical skills, I also have a keen interest in keeping up with the latest
+                        industry trends and advancements. I believe in continuous learning and regularly engage in
+                        professional development activities, attending conferences and workshops to expand my knowledge
+                        and stay ahead in this rapidly evolving IT landscape.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Antivirus and Patch Management</span><br>
+                                <p> Implement an antivirus solution to protect against </p>
+                                <p> malware and ensure it is regularly updated across all IT assets. </p>
+                            </li>
+                            <li><span>Software Distribution and Installation</span><br>
+                                <p> across the organization.This could include using tools like Microsoft System Center
+                                </p>
+                                <p> Configuration Manager (SCCM) or similar solutions.</p>
+                            </li>
+                            <li><span>eporting and Analytics</span><br>
+                                <p> Implement remote administration tools such as remote desktop software or</p>
+                                <p> remote management tools to perform operations on remote PCs from the administrator's
+                                    desk.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023</span><br>cyber security Training at huawei</li>
+                            <li><span>2020-2022</span><br>casino dealer</li>
+                            <li><span>2018-2019</span><br>intership at toshiba</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>NewEra gradute</li>
+                            <li><span>2021</span><br>Degree gradute</li>
+                            <li><span>2018</span><br>middle school gradute</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
