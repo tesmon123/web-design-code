@@ -1,0 +1,108 @@
+#container {
+    background-color: white;
+    max-width: 1280px;
+    margin: auto;
+}
+
+#header {
+    background-color: white;
+    text-align: left;
+    padding: 25px;
+}
+
+#header p {
+    font-size: 25px;
+    text-align: right;
+    margin-top: -40px;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 75px;
+}
+
+
+.topnav {
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.topnav div a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: black;
+    color: white;
+    padding: 14px 16px;
+}
+
+.topcontent {
+    display: flex;
+}
+
+.column {
+    padding: 35px;
+}
+
+.column2 {
+    padding: 96px;
+}
+
+.column1 h2 {
+    font-size: 40px;
+}
+
+.column1 img {
+    width: 100%;
+}
+
+.sidecolumn {
+    padding: 35px;
+}
+
+.sidecolumn1 img {
+    width: 30%;
+}
+
+#posts div a {
+    max-width: fit-content;
+    max-height: 50px;
+}
+
+.footer {
+    display: flex;
+    background-color: white;
+    color: rgb(7, 2, 2);
+    text-align: right;
+
+}
+
+.columnholder {
+    display: flex;
+}
+
+.columnholder1 {
+    display: flex;
+
+    .column {
+        flex-direction: column;
+        width: 78%;
+
+    }
+
+    .sidecolumn {
+        flex-direction: column;
+        width: 12%;
+    }
+
+
+    @media screen and (max-width: 800px) {}
+
+    @media screen and (max-width: 600px) {}

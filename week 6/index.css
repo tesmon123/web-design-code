@@ -1,0 +1,90 @@
+#container {
+
+    margin: auto;
+    max-width: 1024px;
+    background-color: white;
+
+}
+
+.header {
+
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(165, 94, 94);
+
+}
+
+.topnav {
+    display: flex;
+    background-color: #cec5c5;
+    padding: 14px 16px;
+    align-items: baseline;
+    justify-content: space-between;
+
+}
+
+.content {
+    display: flex;
+
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+.topnav div a {
+    color: #070606;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #e99f9f;
+    color: black;
+}
+
+/* Row */
+.row {
+    display: flex;
+}
+
+/* Column */
+.column {
+    width: 33.33%;
+}
+
+
+
+/* Responsive layout - makes the three */
+@media screen and (max-width: 800px) {
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .column {
+        width: 50%;
+    }
+
+    #ten {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 500px) {
+        .row {
+            flex-direction: column;
+            flex-wrap: wrap;
+
+        }
+
+        .footer {
+            height: auto;
+            background-color: white;
+            width: 100%;
+            padding-top: 20px;
+            align-items: center;
+            justify-content: space-around;
+            color: black;
+            font-weight: 100;
+        }
